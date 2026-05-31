@@ -8,3 +8,5 @@ docker build -t testimage:$BUILD_NUMBER .
 docker rm -f $(docker ps |grep test1 |awk '{print $1}')
 
 docker run --name test1 -d -p 80:80 testimage
+
+New App has been installed for PR reviews lets test if ti works.
